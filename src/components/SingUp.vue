@@ -34,9 +34,11 @@
                     name:this.name
 
                 });
+                console.log('st ',result.status)
                 console.warn(result);
                 if(result.status == 201){
                     alert('Sing Up Done');
+                    this.$router.push({name:'HomePage'})
                 }
             }
         },

@@ -1,17 +1,17 @@
-import Home from './components/Home.vue'
+import HomePage from './components/HomePage.vue'
 import SingUp from './components/SingUp.vue'
 import {createRouter,createWebHistory} from 'vue-router'
 
 const routes = [
     {
-        name:'Home',
-        component:Home,
+        name:'HomePage',
+        component:HomePage,
         path:'/'
     },
     {
         name:'SingUp',
         component:SingUp,
-        path:'/Sing-up'
+        path:'/sing-up'
     },
 ];
 const router = createRouter({
