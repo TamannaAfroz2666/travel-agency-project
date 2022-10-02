@@ -8,7 +8,10 @@
     <input type="text" v-model="name" placeholder="Enter Your Name">
     <input type="email" v-model="email" placeholder="Enter Your Email">
     <input type="password" v-model="password" placeholder="Enter Your Password">
-    <button v-on:click="singUp"  >Submit</button>
+    <button v-on:click="singUp">Submit</button>
+    <p>
+        <router-link to="/login">Login</router-link>
+    </p>
 </div>
 </template>
 
@@ -34,11 +37,11 @@
                     name:this.name
 
                 });
-                console.log('st ',result.status)
+                
                 console.warn(result);
                 if(result.status == 201){
                     alert('Sing Up Done');
-                    this.$router.push({name:'HomePage'})
+                    this.$router.push({name:'Login'})
                 }
             }
         },
@@ -49,23 +52,5 @@
 </script>
 
 <style>
-    .logo{
-        width: 100px;
-    }
-    .register input{
-        width: 400px;
-        height: 40px;
-        padding-left: 20px;
-        display: block;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid #ccc;
-    }
-    .register button{
-        width: 100px;
-        height: 30px;
-        border: 1px solid #ccc;
-        background-color: #ddaefa;
-    }
+    
 </style>
