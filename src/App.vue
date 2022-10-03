@@ -50,9 +50,10 @@ export default {
       font-weight: 700;
     }
     .table-body td button {
-      background-color: plum;
+      background-color: #c82333;
+      color: white;
     }
-    .update input {
+    .update input, .add input {
         width: 60%;
         height: 40px;
         padding-left: 20px;
@@ -63,7 +64,7 @@ export default {
         border: 1px solid #ccc;
       
     }
-    .update textarea {
+    .update textarea, .add textarea {
       width: 60%;
         height: 70px;
         padding-left: 20px;
@@ -82,10 +83,26 @@ export default {
       background-color: aquamarine;
     }
 
-    .button {
+    .action {
+      width: 70px;
+      margin-left: 5px;
+      padding-top: 3px;
       text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
     
 
+    }
+    .action-main{
+      display: flex;
+      column-gap: 10px;
+    }
+    .action-main button{
+      font-size: 16px;
+      font-weight: 700;
+      
     }
 
 

@@ -3,8 +3,8 @@
    
     <div class="nav">
         <router-link to="/">Home</router-link>
-    <router-link to="/add">Add Resturant</router-link>
-    <router-link to="/update">Update</router-link>
+    <router-link to="/add">Add Data</router-link>
+    <!-- <router-link to="/update">Update</router-link> -->
     <a v-on:click="logout" href="#">Logout</a>
     </div>
 </template>
