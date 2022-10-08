@@ -18,6 +18,9 @@
     </div>
     </form>
    </div>
+  <div>
+    
+  </div>
 </template>
 <script>
    
@@ -38,7 +41,12 @@ import axios from 'axios';
                 number: '',
                 title:'',
                 description:''
-            }
+            },
+
+            
+
+                                         
+
         }
     },
     methods: {
@@ -56,13 +64,13 @@ import axios from 'axios';
 
             console.warn("result is: ", result)
         }
-    }
-    // mounted() {
-    //     if(!user){
-    //         this.$router.push({name :'SingUp'})
-    //     }
+    },
+    // computed: {
+    //   rows() {
+    //     return this.items.length
+    //   }
     // },
-    ,
+    
     components: { Header }
 }
 </script>
